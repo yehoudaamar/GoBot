@@ -1,3 +1,15 @@
+document.addEventListener("keydown", function(event) {
+    if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+        event.preventDefault();
+        alert("גישה לכלי המפתחים חסומה ❌");
+    }
+});
+
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert("קליק ימני אינו זמין באתר זה 🔒");
+});
+
 // דוגמה לפונקציה פשוטה
 document.addEventListener('DOMContentLoaded', function() {
     console.log("GoBot Loaded!");
