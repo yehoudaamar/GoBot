@@ -5,14 +5,55 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-    alert("קליק ימני אינו זמין באתר זה 🔒");
-});
+// document.addEventListener("contextmenu", function(event) {
+//     event.preventDefault();
+//     alert("קליק ימני אינו זמין באתר זה 🔒");
+// });
 
 // דוגמה לפונקציה פשוטה
 document.addEventListener('DOMContentLoaded', function() {
     console.log("GoBot Loaded!");
+    
+    // תפריט נפתח למובייל
+    const navToggle = document.getElementById('navToggle');
+    const navDropdown = document.getElementById('navDropdown');
+    const navClose = document.getElementById('navClose');
+    
+    if (navToggle && navDropdown) {
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.add('active');
+            navDropdown.classList.add('active');
+            document.body.style.overflow = 'hidden'; // מונע גלילה
+        });
+        
+        // סגירת התפריט בלחיצה על כפתור הסגירה
+        if (navClose) {
+            navClose.addEventListener('click', function() {
+                closeNav();
+            });
+        }
+        
+        // סגירת התפריט בלחיצה על פריט
+        const navItems = navDropdown.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                closeNav();
+            });
+        });
+        
+        // סגירת התפריט בלחיצה על ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeNav();
+            }
+        });
+        
+        function closeNav() {
+            navToggle.classList.remove('active');
+            navDropdown.classList.remove('active');
+            document.body.style.overflow = ''; // מחזיר גלילה
+        }
+    }
 });
 
 // אתחול ספריית AOS לאנימציות גלילה
