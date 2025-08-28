@@ -94,10 +94,33 @@
         <i class="fab fa-whatsapp"></i>
     </a>
     <nav class="nav-menu">
-        <a href="#" class="nav-item active">בית</a>
-        <a href="#about" class="nav-item">איך בונים בוט?</a>
-        <a href="#bot-showcase" class="nav-item">איך נראה בוט?</a>
-        <a href="#contact" class="nav-item">צור קשר</a>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+            <span>תפריט</span>
+        </div>
+        <div class="nav-dropdown" id="navDropdown">
+            <div class="nav-close" id="navClose">
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="#" class="nav-item active">
+                <span><i class="fas fa-home"></i> בית</span>
+            </a>
+            <a href="#about" class="nav-item">
+                <span><i class="fas fa-cogs"></i> איך בונים בוט?</span>
+            </a>
+            <a href="#bot-showcase" class="nav-item">
+                <span><i class="fas fa-robot"></i> איך נראה בוט?</span>
+            </a>
+            <a href="#automation-benefits" class="nav-item">
+                <span><i class="fas fa-magic"></i> למה אוטומציות?</span>
+            </a>
+            <!-- <a href="#clients" class="nav-item">
+                <span><i class="fas fa-users"></i> הלקוחות שלנו</span>
+            </a> -->
+            <a href="#contact" class="nav-item">
+                <span><i class="fas fa-envelope"></i> צור קשר</span>
+            </a>
+        </div>
     </nav>
 
     <section class="hero-section">
@@ -116,8 +139,8 @@
             <div class="hero-text">
                 <h1 class="hero-title glowing-text">GoBot</h1>
                 <div class="tagline-container">
-                    <h2 class="hero-subtitle-main gradient-text">WhatsApp Bots</h2>
-                    <p class="hero-subtitle shine-text">בוטים חכמים בווצאפ</p>
+                    <h2 class="hero-subtitle-main gradient-text">WhatsApp Bots & Automation</h2>
+                    <p class="hero-subtitle shine-text">בוטים חכמים, אוטומציות ומערכות חכמות</p>
                 </div>
                 
               
@@ -129,19 +152,88 @@
                 <i class="fas fa-rocket"></i>
                 <p>הבוט החכם שיזניק את העסק שלך קדימה</p>
             </div>
+            <div class="hero-description">
+                <!-- <p class="hero-pitch">פתרונות אוטומציה מתקדמים ומערכות חכמות לייעול תהליכים עסקיים</p> -->
+                <!-- <ul class="hero-benefits">
+                    <li><i class="fas fa-cogs"></i> אוטומציה מלאה של תהליכים</li>
+                    <li><i class="fas fa-brain"></i> מערכות AI חכמות</li>
+                    <li><i class="fas fa-chart-line"></i> ניתוח נתונים מתקדם</li>
+                </ul> -->
+            </div>
         </div>
     </section>
 
     <section class="innovation-section" data-aos="fade-up">
         <div class="innovation-container">
             <div class="innovation-content">
-                <h2>חדשנות ויצירתיות</h2>
-              <p> אנחנו לא רק מפתחי בוטים – אנו מומחים ביצירת פתרונות דיגיטליים חכמים, חדשניים ומותאמים אישית, שנבנים מתוך הבנה עמוקה של הצרכים הייחודיים של העסק שלך.</p> 
-                     <p>הצוות שלנו משלב טכנולוגיות מתקדמות עם חשיבה אסטרטגית ויצירתית, כדי לפתח מערכות אוטומציה חכמות שמייעלות תהליכים, חוסכות זמן ומשפרות ביצועים עסקיים. אנו מספקים פתרונות שמאפשרים לך להתמקד בצמיחה ובהצלחה, תוך מקסום הרווחיות ושיפור חוויית הלקוח.</p>
-                <p class="highlight-text">אנחנו מאמינים שכל עסק ייחודי ולכן כל פתרון צריך להיות מותאם אישית.</p>
+                <div class="innovation-header">
+                    <div class="innovation-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h2>חדשנות ויצירתיות</h2>
+                </div>
+                
+                <div class="innovation-text-content">
+                    <div class="innovation-paragraph">
+                        <div class="paragraph-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="paragraph-content">
+                            <h3>מומחיות </h3>
+                            <p></p> אנו מומחים ביצירת פתרונות דיגיטליים חכמים, חדשניים ומותאמים אישית, שנבנים מתוך הבנה עמוקה של הצרכים הייחודיים של העסק שלך.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="innovation-paragraph">
+                        <div class="paragraph-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="paragraph-content">
+                            <h3>טכנולוגיה מתקדמת</h3>
+                            <p>הצוות שלנו משלב טכנולוגיות מתקדמות עם חשיבה אסטרטגית ויצירתית, כדי לפתח מערכות אוטומציה חכמות שמייעלות תהליכים, חוסכות זמן ומשפרות ביצועים עסקיים.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="innovation-paragraph">
+                        <div class="paragraph-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="paragraph-content">
+                            <h3>צמיחה והצלחה</h3>
+                            <p>אנו מספקים פתרונות שמאפשרים לך להתמקד בצמיחה ובהצלחה, תוך מקסום הרווחיות ושיפור חוויית הלקוח.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="innovation-highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="highlight-text">אנחנו מאמינים שכל עסק ייחודי ולכן כל פתרון צריך להיות מותאם אישית</p>
+                </div>
             </div>
-            <div class="innovation-gif">
-                <img src="./innovation2.jpg" alt="חדשנות ויצירתיות">
+            
+            <div class="innovation-visual">
+                <div class="innovation-gif">
+                    <img src="./innovation2.jpg" alt="חדשנות ויצירתיות">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-rocket"></i>
+                            <span>חדשנות מתמדת</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-element" data-speed="1.5">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="floating-element" data-speed="2.5">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -493,6 +585,336 @@
         </div>
     </section>
 
+    <!-- אזור חדש: למה צריך אוטומציות? -->
+    <section id="automation-benefits" class="automation-benefits-section">
+        <div class="automation-header">
+            <div class="automation-icon-container">
+                <div class="automation-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="automation-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="automation-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+            
+            <h2>למה צריך אוטומציות?</h2>
+            <p>אוטומציות הן המפתח להצלחה עסקית בעידן הדיגיטלי</p>
+        </div>
+        
+        <!-- אנימציה מדגימה - תהליך שחוזר על עצמו -->
+        <div class="automation-demo">
+            <div class="demo-container">
+                <div class="demo-title">
+                    <h3>תהליך ידני vs אוטומציה</h3>
+                    <p>השוואה ויזואלית של יעילות</p>
+                </div>
+                
+                <div class="demo-comparison">
+                    <!-- צד ימין - תהליך ידני -->
+                    <div class="demo-side manual-side">
+                        <div class="side-header">
+                            <i class="fas fa-user-clock"></i>
+                            <h4>תהליך ידני</h4>
+                        </div>
+                        <div class="process-flow">
+                            <div class="process-step manual-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="step-text">קבלת הודעה</div>
+                                <div class="step-time">30 שניות</div>
+                            </div>
+                            <div class="process-step manual-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="step-text">חיפוש מידע</div>
+                                <div class="step-time">2 דקות</div>
+                            </div>
+                            <div class="process-step manual-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="step-text">כתיבת תשובה</div>
+                                <div class="step-time">3 דקות</div>
+                            </div>
+                            <div class="process-step manual-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div class="step-text">שליחת תשובה</div>
+                                <div class="step-time">30 שניות</div>
+                            </div>
+                        </div>
+                        <div class="total-time">
+                            <span>סה"כ זמן: 6 דקות</span>
+                        </div>
+                    </div>
+                    
+                    <!-- צד שמאל - אוטומציה -->
+                    <div class="demo-side automation-side">
+                        <div class="side-header">
+                            <i class="fas fa-robot"></i>
+                            <h4>אוטומציה</h4>
+                        </div>
+                        <div class="process-flow">
+                            <div class="process-step auto-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="step-text">קבלת הודעה</div>
+                                <div class="step-time">0.3 שניות</div>
+                            </div>
+                            <div class="process-step auto-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="step-text">עיבוד חכם</div>
+                                <div class="step-time">1     שניות </div>
+                            </div>
+                            <div class="process-step auto-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <div class="step-text">יצירת תשובה</div>
+                                <div class="step-time">0.5 שניות</div>
+                            </div>
+                            <div class="process-step auto-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div class="step-text">שליחת תשובה</div>
+                                <div class="step-time">0.2 שניות</div>
+                            </div>
+                        </div>
+                        <div class="total-time">
+                            <span>סה"כ זמן: 2 שנייות</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="efficiency-indicator">
+                    <div class="efficiency-bar">
+                        <div class="efficiency-fill" data-efficiency="98"></div>
+                    </div>
+                    <div class="efficiency-text">
+                        <span>יעילות משופרת ב-98%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="automation-benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>חיסכון בזמן יקר</h3>
+                <p>אוטומציות חוסכות שעות עבודה יקרות מדי יום, ומאפשרות לכם להתמקד במה שחשוב באמת - הצמיחה והפיתוח של העסק</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> מענה אוטומטי ללקוחות 24/7</li>
+                    <li><i class="fas fa-check"></i> עיבוד הזמנות ללא התערבות ידנית</li>
+                    <li><i class="fas fa-check"></i> ניהול תורים ופגישות אוטומטי</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>שיפור חוויית הלקוח</h3>
+                <p>לקוחות מקבלים מענה מיידי ומדויק, ללא המתנה או טעויות אנוש. זה מוביל ללקוחות מרוצים יותר ונאמנות גבוהה יותר</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> מענה מיידי לכל שאלה</li>
+                    <li><i class="fas fa-check"></i> מידע מדויק ועדכני</li>
+                    <li><i class="fas fa-check"></i> שירות עקבי ואיכותי</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>הגדלת רווחים</h3>
+                <p>אוטומציות מגדילות מכירות, מפחיתות עלויות תפעול ומשפרות את היעילות הכללית של העסק</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> מכירות נוספות 24/7</li>
+                    <li><i class="fas fa-check"></i> הפחתת עלויות כוח אדם</li>
+                    <li><i class="fas fa-check"></i> מניעת טעויות יקרות</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>ניתוח נתונים מתקדם</h3>
+                <p>אוטומציות מספקות נתונים מדויקים על התנהגות הלקוחות, המאפשרים קבלת החלטות מושכלות ומונעות נתונים</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> מעקב אחר התנהגות לקוחות</li>
+                    <li><i class="fas fa-check"></i> זיהוי מגמות וטרנדים</li>
+                    <li><i class="fas fa-check"></i> אופטימיזציה מתמדת</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>נוכחות דיגיטלית חזקה</h3>
+                <p>בוטים חכמים מחזקים את הנוכחות הדיגיטלית של העסק ומספקים חוויית משתמש מודרנית ומתקדמת</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> תדמית טכנולוגית מתקדמת</li>
+                    <li><i class="fas fa-check"></i> נגישות בכל מקום ובכל זמן</li>
+                    <li><i class="fas fa-check"></i> יתרון תחרותי משמעותי</li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>אמינות ובטיחות</h3>
+                <p>אוטומציות מבטיחות שירות עקבי ואמין, ללא תלות במצב רוח, עייפות או טעויות אנוש</p>
+                <ul class="benefit-features">
+                    <li><i class="fas fa-check"></i> שירות עקבי ללא הפסקה</li>
+                    <li><i class="fas fa-check"></i> מניעת טעויות אנוש</li>
+                    <li><i class="fas fa-check"></i> אבטחת מידע מתקדם</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- אזור חדש: הלקוחות שלנו -->
+    <section id="clients" class="clients-section">
+        <div class="clients-header">
+            <div class="clients-icon-container">
+                <div class="clients-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="clients-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="clients-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <h2>הלקוחות שלנו</h2>
+            <p>עשרות עסקים כבר בחרו ב-GoBot להזניק את העסק שלהם</p>
+        </div>
+        
+        <div class="clients-grid">
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>סלון פאות יוקרתי</h3>
+                <p>בוט מתקדם לניהול תורים והצגת מוצרים</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>מכללה טכנולוגית</h3>
+                <p>בוט AI חכם לייעוץ ומידע על קורסים</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+                <h3>רשת נעליים מובילה</h3>
+                <p>בוט שיווקי לקמפיינים וקטלוג דיגיטלי</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>חברת נדל"ן</h3>
+                <p>בוט להצגת נכסים וקביעת סיורים</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>רשת מסעדות</h3>
+                <p>בוט להזמנות משלוחים וניהול שולחנות</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-card">
+                <div class="client-logo">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>מרפאה פרטית</h3>
+                <p>בוט לניהול תורים ותזכורות רפואיות</p>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clients-stats">
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">לקוחות מרוצים</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/6</div>
+                <div class="stat-label">תמיכה זמינה</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">מערכות ובוטים שנבנו</div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" data-aos="fade-up">
         <div class="contact-decoration">
             <div class="contact-shape"></div>
@@ -533,8 +955,10 @@
                 <h4>ניווט מהיר</h4>
                 <ul class="footer-links">
                     <li><a href="#"><i class="fas fa-chevron-left"></i>דף הבית</a></li>
-                    <li><a href="#about"><i class="fas fa-chevron-left"></i>איך בונים בוט?  </a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-left"></i>איך בונים בוט?</a></li>
                     <li><a href="#bot-showcase"><i class="fas fa-chevron-left"></i>איך נראה בוט?</a></li>
+                    <li><a href="#automation-benefits"><i class="fas fa-chevron-left"></i>למה אוטומציות?</a></li>
+                    <li><a href="#clients"><i class="fas fa-chevron-left"></i>הלקוחות שלנו</a></li>
                     <li><a href="#contact"><i class="fas fa-chevron-left"></i>צור קשר</a></li>
                 </ul>
             </div>
